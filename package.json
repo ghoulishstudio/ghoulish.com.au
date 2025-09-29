@@ -1,0 +1,31 @@
+{
+  "name": "gleeson.dev",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve --quiet",
+    "build": "eleventy --quiet"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "blog",
+    "gamedev",
+    "pixelart"
+  ],
+  "author": "Andrew Gleeson",
+  "license": "ISC",
+  "description": "Personal website for Andrew Gleeson.",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.0",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
+    "eleventy-plugin-toc": "github:heygleeson/eleventy-plugin-toc",
+    "luxon": "^3.6.1",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-attrs": "^4.3.1",
+    "markdown-it-image-figures": "^2.1.1"
+  }
+}

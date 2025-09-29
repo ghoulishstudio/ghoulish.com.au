@@ -1,0 +1,20 @@
+name: Eleventy Build
+on: [push]
+permissions:
+  contents: write
+  
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build website (using Eleventy)
+        uses: cjerrington/actions-eleventy@master
+        with:
+          install_dependencies: true
+      - name: Deploy to live branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_dir: build
+          publish_branch: live
+          github_token: ${{ secrets.GITHUB_TOKEN }}
