@@ -3,22 +3,37 @@
 	--green: #C4D333;
 	--black: #120F10;
 	--white: #EDE4D3;
-	--maxWidth: 1000px;
+	//--maxWidth: 100%;
+
+	--headingText: "ChelseaMarket";
+	--bodyText: "AlteHaasGrotesk";
 }
 
 @font-face {
 	font-family: "ChelseaMarket";
-	src: url("/fonts/ChelseaMarket-Regular.ttf") format("truetype");
+	src: url("../fonts/ChelseaMarket-Regular.ttf") format("truetype");
 }
 @font-face {
 	font-family: "FuturaLT";
-	src: url("/fonts/FuturaLT.ttf") format("truetype");
+	src: url("../fonts/FuturaLT.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "AlteHaasGrotesk";
+	src: url("../fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "AlteHaasGrotesk";
+	src: url("../fonts/AlteHaasGroteskBold.ttf") format("truetype");
+	font-weight: bold;
 }
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	//font-family: sans-serif;
 	box-sizing: border-box;
 }
 
