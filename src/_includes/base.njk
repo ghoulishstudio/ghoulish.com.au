@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="icon" type="image/png" href="../favicon.png">
 
 	<title>{{ title }} / {{ site.title }}</title>
 
@@ -16,16 +16,16 @@
 	<meta property="og:description" content="{{ site.description }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ site.url }}" />
-	<meta property="og:image" content="preview.png" />
+	<meta property="og:image" content="../preview.png" />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="{{ site.handle.twitter }}" />
 	<meta name="twitter:title" content="{{ site.title }}" />
 	<meta name="twitter:description" content="{{ site.description }}" />
-	<meta name="twitter:image" content="preview.png" />
+	<meta name="twitter:image" content="../preview.png" />
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	
 	<!-- FontAwesome -->
 	<script src="https://kit.fontawesome.com/87224a5bfc.js" crossorigin="anonymous" defer></script>
@@ -40,43 +40,39 @@
 </head>
 <body>
 	<header>
-		<div id="header">
-			<a href="/"><img id="headerLogo" src="./img/ghoulish_logo_dark.avif"></a>
-			<div>
-				<div id="headerLinks">
-					<a href="./presskit/" class="headerLink">Presskit</a>
-					<a href="./about/" class="headerLink">About</a>
-					<a href="./contact/" class="headerLink">Contact</a>
-				</div>
-				<div id="headerSocials">
-				{% for k,v in site.link %}
-					<a href="{{ v }}" class="headerSocial"><i class="fa-brands fa-{{ k }}"></i></a>
-				{% endfor %}
-				</div>
-			</div>
-		</div>
+		<a href="/"><div id="headerLogo">{% include "logo.njk" %}</div></a>
+		<nav>
+			<ul id="headerLinks">
+				<li><a href="../presskit/" class="headerLink">Presskit</a></li>
+				<li><a href="../about/" class="headerLink">About</a></li>
+				<li><a href="../contact/" class="headerLink">Contact</a></li>
+			</ul>
+			<ul id="headerSocials">
+			{% for k,v in site.link %}
+				<li><a href="{{ v }}" class="headerSocial"><i class="fa-brands fa-{{ k }}"></i></a></li>
+			{% endfor %}
+			</ul>
+		</nav>
 	</header>
 	<main>
 		{{ content | safe }}
 	</main>
 
 	<footer>
-		<div id="footer">
-			<img id="footerLogo" src="./img/ghoulish_logo_green.avif">
-			<span>
-				<i class="fa-regular fa-copyright"></i>
-				<span id="currentYear">2025</span>
-				{{ site.author }}
-				<script>
-					document.getElementById("currentYear").innerText = new Date().getFullYear();
-				</script>
-			</span>
-			{# <div id="footer-links">
-				<a href="/privacy/"><i class="fa-solid fa-shield-halved"></i>Privacy</a>
-				<a href="/rss.xml"><i class="fa-solid fa-rss"></i>RSS</a>
-				<a href="#" id="toTop">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
-			</div> #}
-		</div>
+		{% include "logo.njk" %}
+		<span>
+			<i class="fa-regular fa-copyright"></i>
+			<span id="currentYear">2025</span>
+			{{ site.author }}
+			<script>
+				document.getElementById("currentYear").innerText = new Date().getFullYear();
+			</script>
+		</span>
+		{# <div id="footer-links">
+			<a href="/privacy/"><i class="fa-solid fa-shield-halved"></i>Privacy</a>
+			<a href="/rss.xml"><i class="fa-solid fa-rss"></i>RSS</a>
+			<a href="#" id="toTop">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+		</div> #}
 	</footer>
 </body>
 </html>
