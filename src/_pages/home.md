@@ -4,30 +4,34 @@ permalink: /
 ---
 
 <section id="hero">
-	<img id="heroLogo" src="/img/parasensor_logo.avif">
+	<img id="heroLogo" src="../img/parasensor_ribbons.png">
 	<a href="{{site.link.steam}}" target="_blank"><button class="action"><i class="fa-brands fa-steam"></i> Wishlist on Steam</button></a>
 </section>
 
-<section class="dark quote">
-	<p style="font-size:3rem; color:var(--green);">“</p>
-	<p>When Marisol starts a new life as a telecom technician, she finds herself out of her depth in a mutating city. Connect with strangers, confront grotesque creatures, and unravel a conspiracy at the heart of the metamorphosis.</p>
+<section id="blurb" class="dark quote">
+	<p style="font-size:3rem; align-self: start; color:var(--green);">“</p>
+	<p>Parasensor is a story-rich, non-linear horror game with mechanics involving investigation, conversation, and environmental puzzle solving.</p>
+	<p style="font-size:3rem; align-self: end; color:var(--green);">„</p>
 </section>
 
-<section class="dark">
-	<h2>Watch the Trailer</h2>
+<img class="divider" src="../img/stickers/eye.svg" width="100px">
+
+<section id="trailer" class="dark">
+	<h2>Watch our announcement trailer:</h2>
 	<div class="video">
 		<iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Parasensor - Announce Trailer (WISHLIST NOW!)" width="100%" height="100%" src="https://www.youtube.com/embed/XU68Fm8D6Og?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.ghoulish.com.au&amp;playsinline=1&amp;enablejsapi=1&amp;"></iframe>
 	</div>
 </section>
 
-<section>
+<section class="half">
 	<h2>Who are we?</h2>
-	<p>Section1</p>
+	<p>We're a brand spankin' new videogame studio based in Naarm/Melbourne, Australia!
+		<br>
+	We reckon we're pretty cool.</p>
 </section>
 
-<section>
-	<h2>Section1</h2>
-	<p>Section1</p>
+<section class=" dark half">
+	{% include "newsletter_form.njk" %}
 </section>
 
 <section>

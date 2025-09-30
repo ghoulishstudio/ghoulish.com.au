@@ -3,7 +3,7 @@ title: Presskit
 permalink: /presskit/
 ---
 
-<img id="heroLogo" src="/img/parasensor_logo.avif">
+<img id="heroLogo" src="../img/parasensor_logo.avif">
 
 <div id="presskit">
 	{% renderFile "./src/_includes/presskit.md" %}
@@ -20,7 +20,7 @@ permalink: /presskit/
 <h2>Pre-Alpha Screenshots</h2>
 <div class="gallery">
 	{%- for i in range(0, 6) -%}
-		<a href="/img/screenshots/Parasensor_prealpha_screenshot_{{ i }}.png"><img class="screenshot" src="/img/screenshots/Parasensor_prealpha_screenshot_{{i}}.png" loading="lazy"></a>
+		<a href="../img/screenshots/Parasensor_prealpha_screenshot_{{ i }}.png"><img class="screenshot" src="../img/screenshots/Parasensor_prealpha_screenshot_{{i}}.png" loading="lazy"></a>
 	{%- endfor -%}
 </div>
 </section>

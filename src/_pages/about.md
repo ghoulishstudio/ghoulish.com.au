@@ -27,7 +27,7 @@ permalink: /about/
 <ul class="staffList">
 	{% for nick,person in people %}
 	<li>
-		<img class="portrait" src="/img/team/{{ nick }}.avif" alt="{{ nick }} portrait">
+		<img class="portrait" src="../img/team/{{ nick }}.avif" alt="{{ nick }} portrait">
 		<div class="staffPlate">
 			<b>{{ person.name }}</b>
 			<i>{{ person.role }}</i>
