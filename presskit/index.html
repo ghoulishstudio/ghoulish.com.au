@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="../favicon.png">
 
-	<title>Presskit / GHOULISH</title>
+	<title>Presskit - GHOULISH</title>
 
 	<!-- Meta -->
 	<meta name="description" content="A Games Studio">
@@ -448,50 +448,192 @@
 </g>
 </svg>
 </div></a>
-		<nav>
+		<nav class="desktop">
 			<ul id="headerLinks">
 				<li><a href="../presskit/" class="headerLink">Presskit</a></li>
 				<li><a href="../about/" class="headerLink">About</a></li>
 				<li><a href="../contact/" class="headerLink">Contact</a></li>
 			</ul>
-			<ul id="headerSocials">
 			
-				<li><a href="https://bsky.app/profile/ghoulish.com.au" class="headerSocial"><i class="fa-brands fa-bluesky"></i></a></li>
-			
-				<li><a href="https://store.steampowered.com/app/3722090/Parasensor/" class="headerSocial"><i class="fa-brands fa-steam"></i></a></li>
-			
-				<li><a href="https://www.instagram.com/ghoulishstudio/" class="headerSocial"><i class="fa-brands fa-instagram"></i></a></li>
-			
-				<li><a href="https://www.tiktok.com/@ghoulishstudio" class="headerSocial"><i class="fa-brands fa-tiktok"></i></a></li>
-			
-				<li><a href="https://x.com/GHOULISHstudio" class="headerSocial"><i class="fa-brands fa-twitter"></i></a></li>
-			
+		</nav>
+		<nav class="mobile">
+			<ul>
+				<li><a href="../presskit/" class="">Presskit</a></li>
+				<li><a href="../about/" class="">About</a></li>
+				<li><a href="../contact/" class="">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<img id="heroLogo" src="../img/parasensor_logo.avif">
-<div id="presskit">
-	<div id="factsheet">
+		<style>
+/* PRESSKIT */
+
+section { padding: 2rem; }
+
+#presskit {
+	padding: 0;
+	display: flex;
+	flex-flow: row;
+	color: var(--black);
+	width: 100%;
+}
+
+#factsheet {
+	width: 30%;
+	background: var(--pink);
+	padding: 2rem;
+
+	ul { margin-left: 2em; margin-top: .5em; }
+	li { font-family: var(--bodyText); margin-bottom: .5em;} 
+	a { font-weight: bold; color: var(--blue);}
+}
+
+#description {
+	width: 70%;
+	background: var(--white);
+	padding: 2rem;
+	flex-grow: 1;
+
+	h1 { margin-bottom: 1em; }
+	p { margin-inline: 0; max-width: 70ch; }
+	h3 { font-family: var(--bodyText); }
+	h3 + p { margin-left: 2em; }
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	align-items: center;
+
+	column-gap: .8em;
+	row-gap: .5em;
+	margin: 1em auto;
+	max-width: 1000px;
+	overflow: clip;
+
+	
+	padding: 1em;
+}
+
+.gallery a {
+	display: flex; 
+	align-items: center; 
+	justify-items: center; 
+	aspect-ratio: 16 / 9;
+	height: 100%; 
+}
+
+.gallery img { object-fit: contain; height: 100%; background-color: #EDE4D350; }
+
+.screenshot {
+	width: 100%;
+	transition: transform 0.2s;
+}
+.screenshot:hover {
+
+	transform: scale(1.05);
+}
+
+#articles { 
+	display: flex; flex-flow: row wrap; column-gap: 2em;
+h1 { width: 100%; }
+h2 { margin-bottom: .5em; }
+ul { list-style-type: square; margin-left: 1em; font-family: var(--bodyText); }
+li { margin-bottom: .5em; font-weight: normal; }
+li::marker { color: var(--pink); } 
+
+}
+
+.gridList {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.gridList li {
+	min-width: 30ch;
+	flex-basis: calc(50% - 1em);
+	padding: 1em;
+	margin: .5em;
+	padding-left: 2em;
+	display: flex;
+	flex-flow: column;
+	position: relative;
+	background-color: var(--white);
+	border-radius: 4px;
+}
+
+.gridList li::after {
+	content:"";
+	background: var(--pink);
+	color: var(--white);
+	font-weight: 800;
+	width: 1em;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 4px 0 0 4px;
+	height: 100%;
+}
+
+@media (max-width: 600px) {
+	#presskit { 
+		padding: 0; 
+		> * { width: 100%; }
+		
+	}
+
+	#presskit, .quote {
+		flex-flow: column;
+	}
+
+	.gridList li { flex-basis: 100%; }
+
+	section { padding: 1em; }
+
+	.gallery { 
+		padding: 0;
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+
+		.screenshot:hover { transform: none; }
+	}
+}
+</style>
+<section id="presskit">
+<div id="factsheet">
 <h1>Factsheet</h1>
-<h3>Developer</h3>
-<p>GHOULISH</p>
-<p>Based in Naarm/Melbourne, Australia</p>
-<h3>Press/Business Contact</h3>
-<p>Mickey Krekelberg, Director</p>
-<p><a href="mailto:mickey@ghoulish.com.au">mickey@ghoulish.com.au</a></p>
-<h3>Platforms</h3>
+<h2>Developer</h2>
+<p><strong>GHOULISH</strong><br>
+Based in Naarm/Melbourne, Australia</p>
+<h2>Press/Business Contact</h2>
+<p>Mickey Krekelberg, Director
+<a href="mailto:mickey@ghoulish.com.au">mickey@ghoulish.com.au</a></p>
+<h2>Platforms</h2>
 <ul>
 <li><a href="">Steam (PC)</a></li>
 <li>Other Platforms TBD</li>
 </ul>
-<h3>Key Dates</h3>
+<h2>Key Dates</h2>
 <ul>
 <li><strong>JUL 2023</strong> <br> Prototype began</li>
 <li><strong>JUL 2024</strong> <br> Ghoulish founded</li>
 <li><strong>OCT 2024</strong> <br> Pre-production began</li>
 <li><strong>JUL 2025</strong> <br> Game announced</li>
 <li><strong>TBA 202X</strong> <br> Release date</li>
+</ul>
+<h2>Funding/Support:</h2>
+<ul>
+<li>VicScreen, Originate Games (2023)</li>
+<li>VicScreen, Production Fund (2024)</li>
+</ul>
+<h2>Social:</h2>
+<ul>
+<li><a href="">Instagram</a></li>
+<li><a href="">Bluesky</a></li>
+<li><a href="">TikTok</a></li>
+<li><a href="">X</a></li>
 </ul>
 </div>
 <div id="description">
@@ -518,58 +660,80 @@ In a desperate bid to get away from her old home, she accepts a high-risk role i
 <p>In July 2024, Ghoulish was founded as a company and would soon begin pre-production. Then in October, we received further support from VicScreen through their Games Production Fund. We renamed the game to 'Parasensor'.</p>
 <p>After a long wait, we announced Parasensor at the inaugural Frosty Games Fest (in Summer Game Fest 2025).</p>
 </div>
-</div>
-<section class="dark">
-<h2>Announcement Trailer</h2>
+</section>
+<section id="trailer" class="dark">
+<h1>Announcement Trailer</h1>
 <div class="video">
-	<iframe frameborder="0" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" title="Parasensor - Announce Trailer (WISHLIST NOW!)" width="100%" height="100%" src="https://www.youtube.com/embed/XU68Fm8D6Og?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.ghoulish.com.au&amp;playsinline=1&amp;enablejsapi=1&amp;"></iframe>
+	<iframe frameborder="0" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" title="Parasensor - Announce Trailer (WISHLIST NOW!)" width="100%" height="100%" src="https://www.youtube.com/embed/74yOtFSqHYM?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.ghoulish.com.au&amp;playsinline=1&amp;enablejsapi=1&amp;"></iframe>
 </div>
 </section>
-<section class="dark">
-<h2>Pre-Alpha Screenshots</h2>
-<div class="gallery"><a href="../img/screenshots/Parasensor_prealpha_screenshot_0.png"><img class="screenshot" src="../img/screenshots/Parasensor_prealpha_screenshot_0.png" loading="lazy"></a><a href="../img/screenshots/Parasensor_prealpha_screenshot_1.png"><img class="screenshot" src="../img/screenshots/Parasensor_prealpha_screenshot_1.png" loading="lazy"></a><a href="../img/screenshots/Parasensor_prealpha_screenshot_2.png"><img class="screenshot" src="../img/screenshots/Parasensor_prealpha_screenshot_2.png" loading="lazy"></a><a href="../img/screenshots/Parasensor_prealpha_screenshot_3.png"><img class="screenshot" src="../img/screenshots/Parasensor_prealpha_screenshot_3.png" loading="lazy"></a><a href="../img/screenshots/Parasensor_prealpha_screenshot_4.png"><img class="screenshot" src="../img/screenshots/Parasensor_prealpha_screenshot_4.png" loading="lazy"></a><a href="../img/screenshots/Parasensor_prealpha_screenshot_5.png"><img class="screenshot" src="../img/screenshots/Parasensor_prealpha_screenshot_5.png" loading="lazy"></a></div>
+<section id="screenshots" class="bg_3">
+<h1>Pre-Alpha Screenshots</h1>
+<div class="gallery"><a href="../img/presskit/Parasensor_prealpha_screenshot_0.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_0.png" loading="lazy"></a><a href="../img/presskit/Parasensor_prealpha_screenshot_1.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_1.png" loading="lazy"></a><a href="../img/presskit/Parasensor_prealpha_screenshot_2.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_2.png" loading="lazy"></a><a href="../img/presskit/Parasensor_prealpha_screenshot_3.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_3.png" loading="lazy"></a><a href="../img/presskit/Parasensor_prealpha_screenshot_4.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_4.png" loading="lazy"></a><a href="../img/presskit/Parasensor_prealpha_screenshot_5.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_5.png" loading="lazy"></a><a href="../img/presskit/Parasensor_prealpha_screenshot_6.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_6.png" loading="lazy"></a></div>
 </section>
-<section class="dark">
-<h2>Key Art &amp; Logos</h2>
+<section id="keyart" class="dark">
+<h1>Key Art &amp; Logos</h1>
+<h2>Parasensor Key Art &amp; Logo</h2>
+<div class="gallery"><a href="../img/presskit/Parasensor_KeyArt_0.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_KeyArt_0.png" loading="lazy"></a><a href="../img/presskit/Parasensor_KeyArt_1.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_KeyArt_1.png" loading="lazy"></a><a href="../img/presskit/Parasensor_Logo_0.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_Logo_0.png" loading="lazy"></a><a href="../img/presskit/Parasensor_Logo_1.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_Logo_1.png" loading="lazy"></a></div>
+<h2>Studio Logo</h2>
+<div class="gallery"><a href="../img/presskit/Ghoulish_Logo_0.png" target="blank_"><img class="screenshot" src="../img/presskit/Ghoulish_Logo_0.png" loading="lazy"></a><a href="../img/presskit/Ghoulish_Logo_1.png" target="blank_"><img class="screenshot" src="../img/presskit/Ghoulish_Logo_1.png" loading="lazy"></a><a href="../img/presskit/Ghoulish_Logo_2.png" target="blank_"><img class="screenshot" src="../img/presskit/Ghoulish_Logo_2.png" loading="lazy"></a></div>
 </section>
-<section>
-<h2>Selected Articles</h2>
+<section id="articles" class="light">
+<h1>Selected Articles</h1>
+<div id="press">
+<h2>Press</h2>
+<ul>
+<li><a href="https://www.gameshub.com/news/features/ghoulish-melbourne-game-studio-2649446/">Ghoulish is a new Melbourne studio with a drive for defiant art&quot;</a><br>Leah Williams, GamesHub</li>
+<li><a href="https://vicscreen.vic.gov.au/news/building-ghoulish-horror-connection-and-the-indie-games-journey">&quot;BUILDING GHOULISH: HORROR, CONNECTION, AND THE INDIE GAMES JOURNEY&quot;</a><br>Feature Article, VicScreen</li>
+<li><a href="https://checkpointgaming.net/news/2025/06/parasensor-is-a-fixed-camera-horror-game-from-naarm-studio-ghoulish/">Parasensor is a fixed-camera horror game from Naarm studio GHOULISH</a><br>Omi Koulas, Checkpoint Gaming</li>
+<li><a href="https://www.screenhub.com.au/news/features/frosty-games-fest-2668360/">&quot;Frosty Games Fest: 13 major highlights from the showcase&quot;</a><br>Leah Williams, ScreenHub</li>
+</ul>
+</div>
+<div id="events">
+<h2>Events</h2>
+<ul>
+<li><a href="https://www.supanova.com.au/guests/ghoulish-games-studio/">Supanova Melbourne - Guest Panel</a> (29/03/2025)</li>
+<li><a href="https://www.frostygamesfest.com/showcase2025">Frosty Games Fest - Featured Announcement</a> (08/06/2025)</li>
+<li><a href="https://www.acmi.net.au/whats-on/acmi-x-screen-industry-works-in-progress-night/vicscreen-originate/">ACMI X Presents: Originate Games WIP</a> (23/07/2025)</li>
+<li><a href="https://www.freeplay.net.au/">Freeplay Angles Conference</a> (31/07 - 02/08/2025)</li>
+</ul>
+</div>
 </section>
-<section class="light">
-	<h2>The Team</h2>
+<section class="bg_2">
+	<h1>The Team</h1>
 	<ul class="gridList">
-<p><li>
-<b>Mickey Krekelberg</b>
-<i>Ghoulish director, game director, lead developer</i>
-</li></p>
-<p><li>
-<b>Chantel Eagle</b>
-<i>Concept art, character art</i>
-</li></p>
-<p><li>
-<b>Percy Harris</b>
-<i>Concept art, environment illustration</i>
-</li></p>
-<p><li>
-<b>Asha Waterman</b>
-<i>3D art, rigging, animation</i>
-</li></p>
-<p><li>
-<b>Monica Keeler</b>
-<i>UI &amp; UX design, graphic design</i>
-</li></p>
-<p><li>
-<b>Cecile Richard</b>
-<i>Narrative design, writing</i>
-</li></p>
-<p><li>
-<b>Miles Lee</b>
-<i>Composer, sound design</i>
-</li></p>
-<p><li>
-<b>Danna Yun</b>
-<i>Songwriter, musician</i>
-</li></p>
+<li>
+	<b>Mickey Krekelberg</b>
+	<i>Creative Director, Lead Programmer</i>
+</li>
+<li>
+	<b>Chantel Eagle</b>
+	<i>Character Artist, 2D &amp; 3D Artist</i>
+</li>
+<li>
+	<b>Percy Harris</b>
+	<i>Environment Artist, 2D Artist</i>
+</li>
+<li>
+	<b>Asha Waterman</b>
+	<i>3D Artist, Rigger, Animator</i>
+</li>
+<li>
+	<b>Monica Keeler</b>
+	<i>UI &amp; UX Designer, Graphic Designer</i>
+</li>
+<li>
+	<b>Cecile Richard</b>
+	<i>Narrative Designer, Writer</i>
+</li>
+<li>
+	<b>Miles Lee</b>
+	<i>Composer, Sound Designer</i>
+</li>
+<li>
+	<b>Danna Yun</b>
+	<i>Songwriter, Musician</i>
+</li>
 </ul>
 	</main>
 
@@ -990,6 +1154,19 @@ In a desperate bid to get away from her old home, she accepts a high-risk role i
 				document.getElementById("currentYear").innerText = new Date().getFullYear();
 			</script>
 		</span>
+		<ul>
+			
+				<li><a href="https://store.steampowered.com/app/3722090/Parasensor/"><i class="fa-brands fa-steam"></i></a></li>
+			
+				<li><a href="https://bsky.app/profile/ghoulish.com.au"><i class="fa-brands fa-bluesky"></i></a></li>
+			
+				<li><a href="https://www.instagram.com/ghoulishstudio/"><i class="fa-brands fa-instagram"></i></a></li>
+			
+				<li><a href="https://www.tiktok.com/@ghoulishstudio"><i class="fa-brands fa-tiktok"></i></a></li>
+			
+				<li><a href="https://x.com/GHOULISHstudio"><i class="fa-brands fa-twitter"></i></a></li>
+			
+		</ul>
 		
 	</footer>
 </body>

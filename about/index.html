@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="../favicon.png">
 
-	<title>About Us / GHOULISH</title>
+	<title>About Us - GHOULISH</title>
 
 	<!-- Meta -->
 	<meta name="description" content="A Games Studio">
@@ -448,112 +448,151 @@
 </g>
 </svg>
 </div></a>
-		<nav>
+		<nav class="desktop">
 			<ul id="headerLinks">
 				<li><a href="../presskit/" class="headerLink">Presskit</a></li>
 				<li><a href="../about/" class="headerLink">About</a></li>
 				<li><a href="../contact/" class="headerLink">Contact</a></li>
 			</ul>
-			<ul id="headerSocials">
 			
-				<li><a href="https://bsky.app/profile/ghoulish.com.au" class="headerSocial"><i class="fa-brands fa-bluesky"></i></a></li>
-			
-				<li><a href="https://store.steampowered.com/app/3722090/Parasensor/" class="headerSocial"><i class="fa-brands fa-steam"></i></a></li>
-			
-				<li><a href="https://www.instagram.com/ghoulishstudio/" class="headerSocial"><i class="fa-brands fa-instagram"></i></a></li>
-			
-				<li><a href="https://www.tiktok.com/@ghoulishstudio" class="headerSocial"><i class="fa-brands fa-tiktok"></i></a></li>
-			
-				<li><a href="https://x.com/GHOULISHstudio" class="headerSocial"><i class="fa-brands fa-twitter"></i></a></li>
-			
+		</nav>
+		<nav class="mobile">
+			<ul>
+				<li><a href="../presskit/" class="">Presskit</a></li>
+				<li><a href="../about/" class="">About</a></li>
+				<li><a href="../contact/" class="">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section class="dark quote">
+		<style>
+section { 
+	padding-block: 3em;
+	h1 { color: var(--green); }
+	strong { color: var(--pink); }
+	li { background: transparent; }
+}
+
+#about { 
+	p { font-size: 1.2em; }
+	> * { margin: 0.5rem; }
+}
+
+
+.staffList {
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+}
+
+.staffList li {
+	display: flex;
+	flex-flow: column;
+	position: relative;
+	width: 33.3%;
+}
+
+.portrait {
+	transition: transform 0.2s;
+}
+
+.portrait:hover {
+	transform: scale(1.05);
+}
+
+.staffPlate {
+	margin-inline: 1em;
+	margin-block: 0 2em;
+	padding: 2em;
+	background: url("../img/backgrounds/panel-pink.webp");
+	background-size: 100% 100%;
+	color: var(--black);
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1;
+
+	h3 { margin-top: 0; font-family: var(--headingText); background: var(--black); color: var(--green); width: fit-content;}
+	p { font-size: 1.2em; margin: 0; background: none; color: var(--black); }
+}
+
+@media (max-width: 600px) { 
+	.staffList li {
+		width: 100%;
+	} 
+}
+
+
+
+</style>
+<section class="dark columns">
 <h2>ABOUT US</h2>
-<div class="about">
-	<p class="bigger"><span class="ghoul">Ghoulish</span> is a new creative studio based in Naarm/Melbourne, in Australia.</p>
-<p>Right now, we're working hard on the studio's first commercial project.</p>
-<p>As a creative practice and studio, our core values are:<br>Equity, Creative Diversity, and Creative Innovation.</p>
+<div id="about">
+	<h1>Ghoulish is a new creative studio based in Naarm/Melbourne, in Australia.</h1>
+<p>Right now, we're working hard on the studio's first commercial project, <strong>Parasensor</strong>.</p>
+<p>As a creative practice and studio, our core values are:<br><strong>Equity</strong>, <strong>Creative Diversity</strong>, and <strong>Creative Innovation</strong>.</p>
 <p>Our goal is to create sustainable, equitable employment for fresh voices in the local industry, and to develop new design methodologies and approaches to game development.</p>
 </div>
 </section>
-<section class="dark">
-<h2>THE TEAM</h2>
+<section class="bg_3 columns">
+<div>
+<h2>MEET THE GHOULS</h2>
+<p>Ghoulish's creative team is a small group of captive artists, who live in eternal servitude to an unnamed and unknowable evil.</p>
+</div>
 <ul class="staffList">
-<p><li>
-<img class="portrait" src="../img/team/ghoul.avif" alt="ghoul portrait">
-<div class="staffPlate">
-<b>???</b>
-<i>Dark Overlord</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
-<p><li>
-<img class="portrait" src="../img/team/mickey.avif" alt="mickey portrait">
-<div class="staffPlate">
-<b>Mickey Krekelberg</b>
-<i>Ghoulish director, game director, lead developer</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
-<p><li>
-<img class="portrait" src="../img/team/chantel.avif" alt="chantel portrait">
-<div class="staffPlate">
-<b>Chantel Eagle</b>
-<i>Concept art, character art</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
-<p><li>
-<img class="portrait" src="../img/team/percy.avif" alt="percy portrait">
-<div class="staffPlate">
-<b>Percy Harris</b>
-<i>Concept art, environment illustration</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
-<p><li>
-<img class="portrait" src="../img/team/asha.avif" alt="asha portrait">
-<div class="staffPlate">
-<b>Asha Waterman</b>
-<i>3D art, rigging, animation</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
-<p><li>
-<img class="portrait" src="../img/team/mon.avif" alt="mon portrait">
-<div class="staffPlate">
-<b>Monica Keeler</b>
-<i>UI &amp; UX design, graphic design</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
-<p><li>
-<img class="portrait" src="../img/team/cecile.avif" alt="cecile portrait">
-<div class="staffPlate">
-<b>Cecile Richard</b>
-<i>Narrative design, writing</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
-<p><li>
-<img class="portrait" src="../img/team/miles.avif" alt="miles portrait">
-<div class="staffPlate">
-<b>Miles Lee</b>
-<i>Composer, sound design</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
-<p><li>
-<img class="portrait" src="../img/team/danna.avif" alt="danna portrait">
-<div class="staffPlate">
-<b>Danna Yun</b>
-<i>Songwriter, musician</i></p>
-<p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div></p>
-<p></div>
-</li></p>
+	<li>
+		<img class="portrait" src="../img/team/ghoul.webp" alt="ghoul portrait">
+		<div class="staffPlate">
+			<h3>???</h3>
+			<p>Dark Overlord</p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
+	<li>
+		<img class="portrait" src="../img/team/mickey.webp" alt="mickey portrait">
+		<div class="staffPlate">
+			<h3>Mickey Krekelberg</h3>
+			<p>Creative Director, Lead Programmer</p><div class="staffLink"><a href="https://ghoulish.com.au"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
+	<li>
+		<img class="portrait" src="../img/team/chantel.webp" alt="chantel portrait">
+		<div class="staffPlate">
+			<h3>Chantel Eagle</h3>
+			<p>Character Artist, 2D &amp; 3D Artist</p><div class="staffLink"><a href="https://www.artstation.com/chumboe"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
+	<li>
+		<img class="portrait" src="../img/team/percy.webp" alt="percy portrait">
+		<div class="staffPlate">
+			<h3>Percy Harris</h3>
+			<p>Environment Artist, 2D Artist</p><div class="staffLink"><a href="https://unseconds.cargo.site/"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
+	<li>
+		<img class="portrait" src="../img/team/asha.webp" alt="asha portrait">
+		<div class="staffPlate">
+			<h3>Asha Waterman</h3>
+			<p>3D Artist, Rigger, Animator</p><div class="staffLink"><a href="https://www.artstation.com/ashawaterman"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
+	<li>
+		<img class="portrait" src="../img/team/mon.webp" alt="mon portrait">
+		<div class="staffPlate">
+			<h3>Monica Keeler</h3>
+			<p>UI &amp; UX Designer, Graphic Designer</p><div class="staffLink"><a href="https://www.monicakeeler.com/"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
+	<li>
+		<img class="portrait" src="../img/team/cecile.webp" alt="cecile portrait">
+		<div class="staffPlate">
+			<h3>Cecile Richard</h3>
+			<p>Narrative Designer, Writer</p><div class="staffLink"><a href="http://cecilerichard.design/"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
+	<li>
+		<img class="portrait" src="../img/team/miles.webp" alt="miles portrait">
+		<div class="staffPlate">
+			<h3>Miles Lee</h3>
+			<p>Composer, Sound Designer</p><div class="staffLink"><a href="https://soundcloud.com/miles_lee"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
+	<li>
+		<img class="portrait" src="../img/team/danna.webp" alt="danna portrait">
+		<div class="staffPlate">
+			<h3>Danna Yun</h3>
+			<p>Songwriter, Musician</p><div class="staffLink"><a href="http://dannayun.com/"><i class="fa-solid fa-web"></i></a></div>
+		</div></li>
 </ul>
 </section>
 	</main>
@@ -975,6 +1014,19 @@
 				document.getElementById("currentYear").innerText = new Date().getFullYear();
 			</script>
 		</span>
+		<ul>
+			
+				<li><a href="https://store.steampowered.com/app/3722090/Parasensor/"><i class="fa-brands fa-steam"></i></a></li>
+			
+				<li><a href="https://bsky.app/profile/ghoulish.com.au"><i class="fa-brands fa-bluesky"></i></a></li>
+			
+				<li><a href="https://www.instagram.com/ghoulishstudio/"><i class="fa-brands fa-instagram"></i></a></li>
+			
+				<li><a href="https://www.tiktok.com/@ghoulishstudio"><i class="fa-brands fa-tiktok"></i></a></li>
+			
+				<li><a href="https://x.com/GHOULISHstudio"><i class="fa-brands fa-twitter"></i></a></li>
+			
+		</ul>
 		
 	</footer>
 </body>

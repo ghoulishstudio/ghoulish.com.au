@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="../favicon.png">
 
-	<title>Contact / GHOULISH</title>
+	<title>Contact - GHOULISH</title>
 
 	<!-- Meta -->
 	<meta name="description" content="A Games Studio">
@@ -448,30 +448,111 @@
 </g>
 </svg>
 </div></a>
-		<nav>
+		<nav class="desktop">
 			<ul id="headerLinks">
 				<li><a href="../presskit/" class="headerLink">Presskit</a></li>
 				<li><a href="../about/" class="headerLink">About</a></li>
 				<li><a href="../contact/" class="headerLink">Contact</a></li>
 			</ul>
-			<ul id="headerSocials">
 			
-				<li><a href="https://bsky.app/profile/ghoulish.com.au" class="headerSocial"><i class="fa-brands fa-bluesky"></i></a></li>
-			
-				<li><a href="https://store.steampowered.com/app/3722090/Parasensor/" class="headerSocial"><i class="fa-brands fa-steam"></i></a></li>
-			
-				<li><a href="https://www.instagram.com/ghoulishstudio/" class="headerSocial"><i class="fa-brands fa-instagram"></i></a></li>
-			
-				<li><a href="https://www.tiktok.com/@ghoulishstudio" class="headerSocial"><i class="fa-brands fa-tiktok"></i></a></li>
-			
-				<li><a href="https://x.com/GHOULISHstudio" class="headerSocial"><i class="fa-brands fa-twitter"></i></a></li>
-			
+		</nav>
+		<nav class="mobile">
+			<ul>
+				<li><a href="../presskit/" class="">Presskit</a></li>
+				<li><a href="../about/" class="">About</a></li>
+				<li><a href="../contact/" class="">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<h1>get in touch!</h1>
-<p>For general inquiries, you can contact us directly via email at <span class="nw"><a href="">heygleeson [at] gmail.com</a>.
+		<style>
+	section { 
+		padding-block: 3em; 
+		text-align: center;
+
+		> * { margin-inline: auto; }
+
+		.divider { margin-block: 2em; }
+	}
+
+	#contact {
+
+		h1 { background: var(--black); width: fit-content;}
+		p { max-width: 60ch; margin-inline: auto; }
+
+	}
+
+	form { 
+
+		background: var(--green); 
+		padding: 2em;
+		margin: 1em auto;
+		max-width: 700px;
+		display: flex;
+		flex-flow: column;
+
+		h1 { color: var(--black); }
+
+		button { 
+			align-self: end;
+			border: none; 
+			background: var(--pink); 
+			padding: 1em; 
+			font-family: var(--headingText);
+			font-size: 1.5em;
+			margin-left: auto;
+			min-width: 10ch;
+
+			&:hover { 
+				cursor: pointer;
+				background: var(--black);
+				color: var(--pink);
+			}
+
+			&:active { transform: translateY(4px); }
+		}
+
+		.form-group { 
+			textarea, input { 
+				font-family: var(--bodyText);
+				font-size: 16px;
+				width: 100%; 
+				margin-block: .5em;
+				border: none;
+				background-color: var(--white);
+				padding: 1em;
+			}
+		}
+	}
+
+	}
+</style>
+<section id="contact" class="bg_3">
+<h1>Want to contact us?</h1>
+<p>Feel free to get in touch with us any time!</p>
+<p>For media or business inquiries, please contact Mickey directly at:</p>
+<p><a href="">mickey[at]ghoulish.com.au</a></p>
+</section>
+<section id="form" class="dark">
+<img class="divider" src="../img/stickers/eye.svg" width="100px">
+  <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+  	<h1>Contact Form</h1>
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Name (required)" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address (required)" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
+  </form>
+</section>
 
 	</main>
 
@@ -892,6 +973,19 @@
 				document.getElementById("currentYear").innerText = new Date().getFullYear();
 			</script>
 		</span>
+		<ul>
+			
+				<li><a href="https://store.steampowered.com/app/3722090/Parasensor/"><i class="fa-brands fa-steam"></i></a></li>
+			
+				<li><a href="https://bsky.app/profile/ghoulish.com.au"><i class="fa-brands fa-bluesky"></i></a></li>
+			
+				<li><a href="https://www.instagram.com/ghoulishstudio/"><i class="fa-brands fa-instagram"></i></a></li>
+			
+				<li><a href="https://www.tiktok.com/@ghoulishstudio"><i class="fa-brands fa-tiktok"></i></a></li>
+			
+				<li><a href="https://x.com/GHOULISHstudio"><i class="fa-brands fa-twitter"></i></a></li>
+			
+		</ul>
 		
 	</footer>
 </body>
