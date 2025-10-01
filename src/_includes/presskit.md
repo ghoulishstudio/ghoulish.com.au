@@ -1,25 +1,24 @@
+<section id="presskit">
 <div id="factsheet">
 
 # Factsheet
 
-### Developer
+## Developer
 
-GHOULISH
-
+**GHOULISH**  
 Based in Naarm/Melbourne, Australia
 
-### Press/Business Contact
+## Press/Business Contact
 
 Mickey Krekelberg, Director
-
 [mickey@ghoulish.com.au](mailto:mickey@ghoulish.com.au)
 
-### Platforms
+## Platforms
 
 - [Steam (PC)]()
 - Other Platforms TBD
 
-### Key Dates
+## Key Dates
 
 - **JUL 2023** <br> Prototype began
 - **JUL 2024** <br> Ghoulish founded
@@ -27,10 +26,22 @@ Mickey Krekelberg, Director
 - **JUL 2025** <br> Game announced
 - **TBA 202X** <br> Release date
 
+## Funding/Support:
+
+- VicScreen, Originate Games (2023)
+- VicScreen, Production Fund (2024)
+
+## Social:
+- [Instagram]({{site.link.instagram}})
+- [Bluesky]({{site.link.bluesky}})
+- [TikTok]({{site.link.tiktok}})
+- [X]({{site.link.twitter}})
+
 </div>
 <div id="description">
 
 # Description
+
 **Parasensor** is a story-rich, non-linear horror game with mechanics involving investigation, conversation, and environmental puzzle solving.
 
 When Marisol starts a new life as a telecom technician, she finds herself out of her depth in a mutating city. Connect with strangers, confront grotesque creatures, and unravel a conspiracy at the heart of the metamorphosis.
@@ -72,3 +83,75 @@ In July 2024, Ghoulish was founded as a company and would soon begin pre-product
 After a long wait, we announced Parasensor at the inaugural Frosty Games Fest (in Summer Game Fest 2025).
 
 </div>
+</section>
+
+<section id="trailer" class="dark">
+<h1>Announcement Trailer</h1>
+<div class="video">
+	<iframe frameborder="0" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" title="Parasensor - Announce Trailer (WISHLIST NOW!)" width="100%" height="100%" src="https://www.youtube.com/embed/74yOtFSqHYM?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.ghoulish.com.au&amp;playsinline=1&amp;enablejsapi=1&amp;"></iframe>
+</div>
+</section>
+
+<section id="screenshots" class="bg_3">
+
+# Pre-Alpha Screenshots
+
+<div class="gallery">
+	{%- for i in range(0, 7) -%}
+		<a href="../img/presskit/Parasensor_prealpha_screenshot_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_{{i}}.png" loading="lazy"></a>
+	{%- endfor -%}
+</div>
+
+</section>
+
+<section id="keyart" class="dark">
+
+# Key Art &amp; Logos
+
+## Parasensor Key Art &amp; Logo
+
+<div class="gallery">
+	{%- for i in range(0, 2) -%}
+		<a href="../img/presskit/Parasensor_KeyArt_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_KeyArt_{{i}}.png" loading="lazy"></a>
+	{%- endfor -%}
+	{%- for i in range(0, 2) -%}
+		<a href="../img/presskit/Parasensor_Logo_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_Logo_{{i}}.png" loading="lazy"></a>
+	{%- endfor -%}
+</div>
+
+## Studio Logo
+
+<div class="gallery">
+	{%- for i in range(0, 3) -%}
+		<a href="../img/presskit/Ghoulish_Logo_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Ghoulish_Logo_{{i}}.png" loading="lazy"></a>
+	{%- endfor -%}
+</div>
+
+</section>
+
+<section id="articles" class="light">
+
+# Selected Articles
+
+<div id="press">
+
+## Press
+
+- [Ghoulish is a new Melbourne studio with a drive for defiant art"](https://www.gameshub.com/news/features/ghoulish-melbourne-game-studio-2649446/)<br>Leah Williams, GamesHub
+- ["BUILDING GHOULISH: HORROR, CONNECTION, AND THE INDIE GAMES JOURNEY"](https://vicscreen.vic.gov.au/news/building-ghoulish-horror-connection-and-the-indie-games-journey)<br>Feature Article, VicScreen
+- [Parasensor is a fixed-camera horror game from Naarm studio GHOULISH](https://checkpointgaming.net/news/2025/06/parasensor-is-a-fixed-camera-horror-game-from-naarm-studio-ghoulish/)<br>Omi Koulas, Checkpoint Gaming
+- ["Frosty Games Fest: 13 major highlights from the showcase"](https://www.screenhub.com.au/news/features/frosty-games-fest-2668360/)<br>Leah Williams, ScreenHub
+
+</div>
+
+<div id="events">
+
+## Events
+
+- [Supanova Melbourne - Guest Panel](https://www.supanova.com.au/guests/ghoulish-games-studio/) (29/03/2025)
+- [Frosty Games Fest - Featured Announcement](https://www.frostygamesfest.com/showcase2025) (08/06/2025)
+- [ACMI X Presents: Originate Games WIP](https://www.acmi.net.au/whats-on/acmi-x-screen-industry-works-in-progress-night/vicscreen-originate/) (23/07/2025)
+- [Freeplay Angles Conference](https://www.freeplay.net.au/) (31/07 - 02/08/2025)
+
+</div>
+</section>
