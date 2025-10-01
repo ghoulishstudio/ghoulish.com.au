@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="../favicon.png">
 
-	<title>{{ title }} / {{ site.title }}</title>
+	<title>{{ title }} - {{ site.title }}</title>
 
 	<!-- Meta -->
 	<meta name="description" content="{{ site.description }}">
@@ -41,16 +41,19 @@
 <body>
 	<header>
 		<a href="/"><div id="headerLogo">{% include "logo.njk" %}</div></a>
-		<nav>
+		<nav class="desktop">
 			<ul id="headerLinks">
 				<li><a href="../presskit/" class="headerLink">Presskit</a></li>
 				<li><a href="../about/" class="headerLink">About</a></li>
 				<li><a href="../contact/" class="headerLink">Contact</a></li>
 			</ul>
-			<ul id="headerSocials">
-			{% for k,v in site.link %}
-				<li><a href="{{ v }}" class="headerSocial"><i class="fa-brands fa-{{ k }}"></i></a></li>
-			{% endfor %}
+			
+		</nav>
+		<nav class="mobile">
+			<ul>
+				<li><a href="../presskit/" class="">Presskit</a></li>
+				<li><a href="../about/" class="">About</a></li>
+				<li><a href="../contact/" class="">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -68,6 +71,11 @@
 				document.getElementById("currentYear").innerText = new Date().getFullYear();
 			</script>
 		</span>
+		<ul>
+			{% for k,v in site.link %}
+				<li><a href="{{ v }}"><i class="fa-brands fa-{{ k }}"></i></a></li>
+			{% endfor %}
+		</ul>
 		{# <div id="footer-links">
 			<a href="/privacy/"><i class="fa-solid fa-shield-halved"></i>Privacy</a>
 			<a href="/rss.xml"><i class="fa-solid fa-rss"></i>RSS</a>
