@@ -7,42 +7,42 @@
 	},
 	"mickey": {
 		"name": "Mickey Krekelberg",
-		"role": "Ghoulish director, game director, lead developer",
+		"role": "Creative Director, Lead Programmer",
 		"link": "https://ghoulish.com.au"
 	},
 	"chantel": {
 		"name": "Chantel Eagle",
-		"role": "Concept art, character art",
-		"link": "https://ghoulish.com.au"
+		"role": "Character Artist, 2D & 3D Artist",
+		"link": "https://www.artstation.com/chumboe"
 	},
 	"percy": {
 		"name": "Percy Harris",
-		"role": "Concept art, environment illustration",
-		"link": "https://ghoulish.com.au"
+		"role": "Environment Artist, 2D Artist",
+		"link": "https://unseconds.cargo.site/"
 	},
 	"asha": {
 		"name": "Asha Waterman",
-		"role": "3D art, rigging, animation",
-		"link": "https://ghoulish.com.au"
+		"role": "3D Artist, Rigger, Animator",
+		"link": "https://www.artstation.com/ashawaterman"
 	},
 	"mon": {
 		"name": "Monica Keeler",
-		"role": "UI & UX design, graphic design",
-		"link": "https://ghoulish.com.au"
+		"role": "UI & UX Designer, Graphic Designer",
+		"link": "https://www.monicakeeler.com/"
 	},
 	"cecile": {
 		"name": "Cecile Richard",
-		"role": "Narrative design, writing",
-		"link": "https://ghoulish.com.au"
+		"role": "Narrative Designer, Writer",
+		"link": "http://cecilerichard.design/"
 	},
 	"miles": {
 		"name": "Miles Lee",
-		"role": "Composer, sound design",
-		"link": "https://ghoulish.com.au"
+		"role": "Composer, Sound Designer",
+		"link": "https://soundcloud.com/miles_lee"
 	},
 	"danna": {
 		"name": "Danna Yun",
-		"role": "Songwriter, musician",
-		"link": "https://ghoulish.com.au"
+		"role": "Songwriter, Musician",
+		"link": "http://dannayun.com/"
 	}
 }
