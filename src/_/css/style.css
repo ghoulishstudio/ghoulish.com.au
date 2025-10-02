@@ -127,9 +127,11 @@ section {
 
 nav { 
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	align-items: center;
+	justify-content: space-between;
 	gap: 1em;
+	width: 100%;
 
 	font-family: var(--bodyText);
 	font-weight: bold;
@@ -167,9 +169,6 @@ nav.mobile {display: none;}
 #headerSocials {
 	display: flex;
 	flex-flow: row;
-	padding: 1.5em;
-  	background-image: url("../img/backgrounds/panel-pink.webp");
-  	background-size: 100% 100%;
 }
 
 .headerSocial {
@@ -375,6 +374,10 @@ section.columns {
 		padding: 1em;
 	}
 
+	footer {
+		ul { display: none; }
+	}
+
 	#headerLogo svg { width: 128px; height: 40px; }
 
 
@@ -400,9 +403,12 @@ section.columns {
 	nav.mobile { 
 		display: flex; 
 
-		ul { display: flex; gap: 1em; font-family: var(--headingText); font-size: 1.5em;}
-		a { text-decoration: none; }
+		ul { display: flex; gap: 1em; font-family: var(--headingText); font-size: 1.5em; }
+		a { text-decoration: none; color: var(--black); }
 		a:hover { color: var(--black); }
+
+		#headerSocials a {  }
+		#headerLinks { justify-content: space-between; width: 100%; }
 	}
 
 }

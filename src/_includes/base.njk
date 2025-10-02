@@ -40,8 +40,8 @@
 </head>
 <body>
 	<header>
-		<a href="/"><div id="headerLogo">{% include "logo.njk" %}</div></a>
 		<nav class="desktop">
+			<a href="/"><div id="headerLogo">{% include "logo.njk" %}</div></a>
 			<ul id="headerLinks">
 				<li><a href="../presskit/" class="headerLink">Presskit</a></li>
 				<li><a href="../about/" class="headerLink">About</a></li>
@@ -50,7 +50,13 @@
 			
 		</nav>
 		<nav class="mobile">
-			<ul>
+			<a href="/"><div id="headerLogo">{% include "logo.njk" %}</div></a>
+			<ul id="headerSocials">
+				{% for k,v in site.link %}
+					<li><a href="{{ v }}"><i class="fa-brands fa-{{ k }}"></i></a></li>
+				{% endfor %}
+			</ul>
+			<ul id="headerLinks">
 				<li><a href="../presskit/" class="">Presskit</a></li>
 				<li><a href="../about/" class="">About</a></li>
 				<li><a href="../contact/" class="">Contact</a></li>

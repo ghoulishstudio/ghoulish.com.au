@@ -7,8 +7,8 @@ permalink: /
 	header { position: absolute; background: transparent; }
 	#headerLogo { fill: var(--green); }
 
-	nav.mobile a { color: var(--pink); }
-	nav.mobile a:active { color: var(--green); }
+	nav.mobile a { color: var(--green); }
+	nav.mobile a:active { color: var(--pink); }
 </style>
 
 <section id="hero" class="dark">
