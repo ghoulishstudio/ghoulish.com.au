@@ -1704,7 +1704,13 @@ transform-origin: 0 0;
 }
 }
 </style></p>
-  <script async src="https://www.google.com/recaptcha/api.js" defer></script>
+<script>
+  const onloadCallback = function() {
+    console.log("reCAPTCHA has loaded!");
+    grecaptcha.reset();
+  };
+</script>
+<script async src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"></script>
   <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
 </div>
 <p><input type="hidden" name="ml-submit" value="1"></p>
@@ -1733,11 +1739,11 @@ transform-origin: 0 0;
       $('.ml-subscribe-form-8119645 .row-success').show();
       $('.ml-subscribe-form-8119645 .row-form').hide();
     }
-      </script>
-<p><script src="https://groot.mailerlite.com/js/w/webforms.min.js?v1f25ee4b05f240a833e02c19975434a4" type="text/javascript"></script>
+  </script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v1f25ee4b05f240a833e02c19975434a4" type="text/javascript"></script>
 <script>
-fetch(&quot;https://assets.mailerlite.com/jsonp/620677/forms/100642291639649918/takel&quot;)
-</script></p>
+fetch("https://assets.mailerlite.com/jsonp/620677/forms/100642291639649918/takel")
+</script>
 </section>
 <section id="acknowledgement" class="bg_2">
 	<p>Ghoulish operates on the unceded lands of the Boon Wurrung and Woiwurrung peoples of the Kulin Nation. We acknowledge the Traditional Owners of Country throughout Victoria and pay our respects to their Elders, past and present.<br><b>Always was, always will be.</b></p>
