@@ -25,11 +25,11 @@ permalink: /
 <img class="divider" src="../img/stickers/eye.svg" width="100px">
 
 <section id="trailer" class="dark">
-	<img src="../img/stickers/side1.png" style="width: 200px; left: 5%; transform:rotate(-10deg);">
-	<img src="../img/stickers/side2.png" style="width: 200px; right:5%; transform: rotate(5deg) translateY(3em);">
-	<img src="../img/stickers/butterfly.png" style="right: 12%; width: 150px; transform: rotate(10deg) translateY(-3em);">
-	<img src="../img/stickers/flame.png" style="left:5%; bottom:5%; top: unset; width: 500px; ">
-	<img src="../img/stickers/slime_2.png" style="width: 200px; left: 15%;">
+	<img src="../img/stickers/side1.png" alt="" style="width: 200px; left: 5%; transform:rotate(-10deg);">
+	<img src="../img/stickers/side2.png" alt="" style="width: 200px; right:5%; transform: rotate(5deg) translateY(3em);">
+	<img src="../img/stickers/butterfly.png" alt="" style="right: 12%; width: 150px; transform: rotate(10deg) translateY(-3em);">
+	<img src="../img/stickers/flame.png" alt="" style="left:5%; bottom:5%; top: unset; width: 500px; ">
+	<img src="../img/stickers/slime_2.png" alt="" style="width: 200px; left: 15%;">
 	<h2>Watch our latest trailer:</h2>
 	<div class="video">
 		<iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Parasensor - Announce Trailer (WISHLIST NOW!)" width="100%" height="100%" src="https://www.youtube.com/embed/74yOtFSqHYM?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.ghoulish.com.au&amp;playsinline=1&amp;enablejsapi=1&amp;"></iframe>
@@ -41,14 +41,13 @@ permalink: /
 	<p>Ghoulish is a brand spankin' new videogame studio based in Naarm/Melbourne, Australia!</p>
 	<p>We reckon we're pretty cool.</p>
 	<p>Find out more on our <a href="/about/">about page</a>!</p>
-	<img src="../img/stickers/ghoulish.png" width="300px">
+	<img src="../img/stickers/ghoulish.png" alt="" width="300px">
 </section>
 
-<section id="newsletter" class=" dark half">
-	
+<section id="newsletter" class="half bg_4">
 	{% include "newsletter_form.njk" %}
 </section>
 
-<section id="acknowledgement">
+<section id="acknowledgement" class="bg_2">
 	<p>Ghoulish operates on the unceded lands of the Boon Wurrung and Woiwurrung peoples of the Kulin Nation. We acknowledge the Traditional Owners of Country throughout Victoria and pay our respects to their Elders, past and present.<br><b>Always was, always will be.</b></p>
 </section>
