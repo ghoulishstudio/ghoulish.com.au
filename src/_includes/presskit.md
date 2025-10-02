@@ -88,7 +88,7 @@ After a long wait, we announced Parasensor at the inaugural Frosty Games Fest (i
 <section id="trailer" class="dark">
 <h1>Announcement Trailer</h1>
 <div class="video">
-	<iframe frameborder="0" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin" title="Parasensor - Announce Trailer (WISHLIST NOW!)" width="100%" height="100%" src="https://www.youtube.com/embed/74yOtFSqHYM?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;origin=https%3A%2F%2Fwww.ghoulish.com.au&amp;playsinline=1&amp;enablejsapi=1&amp;"></iframe>
+	<lite-youtube videoid="74yOtFSqHYM" playlabel="Play: Parasensor - Announce Trailer (WISHLIST NOW!)"></lite-youtube>
 </div>
 </section>
 

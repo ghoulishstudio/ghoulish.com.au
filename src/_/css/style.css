@@ -58,7 +58,6 @@ header, footer {
 	padding: .5em 1em;
 }
 
-
 footer {
 	background: var(--black);
 	color: var(--green);
@@ -69,7 +68,6 @@ footer {
 
 	ul { list-style-type: none; display: flex; gap: 1em; font-size: 24px; }
 	a { color: var(--green); &:hover { color: var(--pink); } }
-
 }
 
 main {
