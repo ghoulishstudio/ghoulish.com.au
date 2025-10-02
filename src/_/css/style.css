@@ -268,6 +268,11 @@ nav.mobile {display: none;}
 	}
 }
 
+.quotation-mark {
+	font-size:3rem;
+	color:var(--green);
+}
+
 #who-are-we {
 	display: flex;
 	flex-flow: column;
@@ -402,6 +407,8 @@ section.columns {
 	#heroLogo { max-width: 100%; }
 	#hero { min-height: 100vh; background-attachment: scroll; }
 	#hero a { max-width: 70%; margin-inline:auto; font-size: 0.8em; }
+
+	.quotation-mark { display: none; }
 
 	section.half { width: 100%; }
 

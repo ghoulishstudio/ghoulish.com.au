@@ -17,9 +17,9 @@ permalink: /
 </section>
 
 <section id="blurb" class="dark quote">
-	<p style="font-size:3rem; align-self: start; color:var(--green);">“</p>
+	<p class="quotation-mark" style="align-self: start;">“</p>
 	<p>Parasensor is a story-rich, non-linear horror game with mechanics involving investigation, conversation, and environmental puzzle solving.</p>
-	<p style="font-size:3rem; align-self: end; color:var(--green);">„</p>
+	<p class="quotation-mark" style="align-self: end;">„</p>
 </section>
 
 <img class="divider" src="../img/stickers/eye.svg" alt="" width="100px">
