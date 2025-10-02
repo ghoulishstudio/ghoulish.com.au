@@ -776,7 +776,13 @@
     }
   }
 </style>
-  <script async src="https://www.google.com/recaptcha/api.js" defer></script>
+<script>
+  const onloadCallback = function() {
+    console.log("reCAPTCHA has loaded!");
+    grecaptcha.reset();
+  };
+</script>
+<script async src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"></script>
   <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
 </div>
 
@@ -812,21 +818,16 @@
       </div>
     </div>
 
-
-  
-
-  
-  
   <script>
     function ml_webform_success_8119645() {
       var $ = ml_jQuery || jQuery;
       $('.ml-subscribe-form-8119645 .row-success').show();
       $('.ml-subscribe-form-8119645 .row-form').hide();
     }
-      </script>
+  </script>
   
   
-      <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v1f25ee4b05f240a833e02c19975434a4" type="text/javascript"></script>
-        <script>
-            fetch("https://assets.mailerlite.com/jsonp/620677/forms/100642291639649918/takel")
-        </script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v1f25ee4b05f240a833e02c19975434a4" type="text/javascript"></script>
+<script>
+fetch("https://assets.mailerlite.com/jsonp/620677/forms/100642291639649918/takel")
+</script>
