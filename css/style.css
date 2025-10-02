@@ -210,7 +210,7 @@ nav.mobile {display: none;}
 }
 
 .action {
-	max-width: 600px;
+	width: 450px;
 	margin-inline: auto;
 	margin-bottom: 1em;
 	padding: 1.5em;
@@ -405,6 +405,8 @@ section.columns {
 	#heroLogo { max-width: 100%; }
 	#hero { min-height: 100vh; background-attachment: scroll; }
 	#hero a { max-width: 70%; margin-inline:auto; font-size: 0.8em; }
+
+	.action { width: 250px }
 
 	.quotation-mark { display: none; }
 
