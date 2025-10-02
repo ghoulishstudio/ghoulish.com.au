@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="/favicon.png">
+	<link rel="preload" href="/img/parasensor_keyart.webp" as="image" fetchpriority="high" />
+	<link rel="preload" href="/img/parasensor_ribbons.webp" as="image" fetchpriority="high" />
 
 	<title>{{ title }} - {{ site.title }}</title>
 
@@ -53,7 +55,7 @@
 			<a href="/"><div id="headerLogo">{% include "logo.njk" %}</div></a>
 			<ul id="headerSocials">
 				{% for k,v in site.link %}
-					<li><a href="{{ v }}"><i class="fa-brands fa-{{ k }}"></i></a></li>
+					<li><a href="{{ v }}" title="{{ k }}"><i class="fa-brands fa-{{ k }}"></i></a></li>
 				{% endfor %}
 			</ul>
 			<ul id="headerLinks">
@@ -79,7 +81,7 @@
 		</span>
 		<ul>
 			{% for k,v in site.link %}
-				<li><a href="{{ v }}"><i class="fa-brands fa-{{ k }}"></i></a></li>
+				<li><a href="{{ v }}" title="{{ k }}"><i class="fa-brands fa-{{ k }}"></i></a></li>
 			{% endfor %}
 		</ul>
 		{# <div id="footer-links">
