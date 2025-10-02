@@ -78,7 +78,7 @@ For media or business inquiries, please contact Mickey directly at:
 </section>
 
 <section id="form" class="dark">
-<img class="divider" src="../img/stickers/eye.svg" width="100px">
+<img class="divider" src="../img/stickers/eye.svg" alt="" width="100px">
 
   <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
   	<h1>Contact Form</h1>

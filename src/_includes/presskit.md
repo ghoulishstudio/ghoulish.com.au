@@ -98,7 +98,7 @@ After a long wait, we announced Parasensor at the inaugural Frosty Games Fest (i
 
 <div class="gallery">
 	{%- for i in range(0, 7) -%}
-		<a href="../img/presskit/Parasensor_prealpha_screenshot_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_{{i}}.png" loading="lazy"></a>
+		<a href="../img/presskit/Parasensor_prealpha_screenshot_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_prealpha_screenshot_{{i}}.png" alt="Parasensor Screenshot {{ i }}" loading="lazy"></a>
 	{%- endfor -%}
 </div>
 
@@ -112,10 +112,10 @@ After a long wait, we announced Parasensor at the inaugural Frosty Games Fest (i
 
 <div class="gallery">
 	{%- for i in range(0, 2) -%}
-		<a href="../img/presskit/Parasensor_KeyArt_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_KeyArt_{{i}}.png" loading="lazy"></a>
+		<a href="../img/presskit/Parasensor_KeyArt_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_KeyArt_{{i}}.png" alt="Parasensor Key Art {{ i }}" loading="lazy"></a>
 	{%- endfor -%}
 	{%- for i in range(0, 2) -%}
-		<a href="../img/presskit/Parasensor_Logo_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_Logo_{{i}}.png" loading="lazy"></a>
+		<a href="../img/presskit/Parasensor_Logo_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Parasensor_Logo_{{i}}.png" alt="Parasensor Logo {{ i }}" loading="lazy"></a>
 	{%- endfor -%}
 </div>
 
@@ -123,7 +123,7 @@ After a long wait, we announced Parasensor at the inaugural Frosty Games Fest (i
 
 <div class="gallery">
 	{%- for i in range(0, 3) -%}
-		<a href="../img/presskit/Ghoulish_Logo_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Ghoulish_Logo_{{i}}.png" loading="lazy"></a>
+		<a href="../img/presskit/Ghoulish_Logo_{{ i }}.png" target="blank_"><img class="screenshot" src="../img/presskit/Ghoulish_Logo_{{i}}.png" alt="Ghoulish Logo {{ i }}" loading="lazy"></a>
 	{%- endfor -%}
 </div>
 

@@ -22,7 +22,7 @@ permalink: /
 	<p style="font-size:3rem; align-self: end; color:var(--green);">„</p>
 </section>
 
-<img class="divider" src="../img/stickers/eye.svg" width="100px">
+<img class="divider" src="../img/stickers/eye.svg" alt="" width="100px">
 
 <section id="trailer" class="dark">
 	<img src="../img/stickers/side1.png" alt="" style="width: 200px; left: 5%; transform:rotate(-10deg);">
