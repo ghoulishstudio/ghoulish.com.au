@@ -62,7 +62,6 @@ footer {
 	background: var(--black);
 	color: var(--green);
 	font-family: var(--bodyText), sans-serif;
-	font-weight: bold;
 
 	svg { fill: var(--green); width: 100px; height: 30px;  } 
 
@@ -121,6 +120,10 @@ section {
 	background-blend-mode: darken;
 	background-color: var(--green);
 }
+
+.credits { display: flex; flex-flow: column; align-items: center;  }
+.copyright { font-weight: bold; }
+.designers { font-size: 14px; }
 
 /* --- */
 #headerLogo {
