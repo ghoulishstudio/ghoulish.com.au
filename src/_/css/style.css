@@ -42,7 +42,7 @@ body {
 	display: flex;
 	flex-flow: column;
 	min-height: 100vh;
-	background: black;
+	background: var(--black);
 	color: var(--white);
 }
 
