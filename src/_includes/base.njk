@@ -77,14 +77,17 @@
 
 	<footer>
 		{% include "logo.njk" %}
-		<span>
-			<i class="fa-regular fa-copyright"></i>
-			<span id="currentYear">2025</span>
-			{{ site.author }}
-			<script>
-				document.getElementById("currentYear").innerText = new Date().getFullYear();
-			</script>
-		</span>
+		<div class="credits">
+			<span class="copyright">
+				<i class="fa-regular fa-copyright"></i>
+				<span id="currentYear">2025</span>
+				{{ site.author }}
+				<script>
+					document.getElementById("currentYear").innerText = new Date().getFullYear();
+				</script>
+			</span>
+			<span class="designers">site design by <a href="https://cecilerichard.design/">cecile</a> and <a href="https://gleeson.dev">andy</a></span>
+		</div>
 		<ul>
 			{% for k,v in site.link %}
 				<li><a href="{{ v }}" title="{{ k }}"><i class="fa-brands fa-{{ k }}"></i></a></li>
