@@ -5,7 +5,7 @@
 	--black: #120F10;
 	--white: #EDE4D3;
 	--blue: #1961a6;
-	//--maxWidth: 100%;
+	--maxWidth: 1920px;
 
 	--headingText: "ChelseaMarket";
 	--bodyText: "AlteHaasGrotesk";
@@ -42,7 +42,7 @@ body {
 	display: flex;
 	flex-flow: column;
 	min-height: 100vh;
-	background: var(--black);
+	background: black;
 	color: var(--white);
 }
 
@@ -55,6 +55,7 @@ header, footer {
 	justify-content: space-between;
 	width: 100%;
 	max-width: var(--maxWidth);
+	margin-inline: auto;
 	padding: .5em 1em;
 }
 
@@ -198,7 +199,8 @@ nav.mobile {display: none;}
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	aspect-ratio: 16 / 9;
-	max-width: 100%;
+	width: 100%;
+	max-width: var(--maxWidth);
 	margin: 0;
 	display: flex;
 	flex-flow: column;
@@ -255,7 +257,7 @@ nav.mobile {display: none;}
 
 .quote {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	padding-block: 3em;
 	
@@ -428,5 +430,11 @@ section.columns {
 		#headerSocials a {  }
 		#headerLinks { justify-content: space-between; width: 100%; }
 	}
+
+}
+
+@media (min-width: 1920px) {
+
+	.video, lite-youtube { max-width: 1080px !important; }
 
 }
